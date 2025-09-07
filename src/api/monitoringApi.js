@@ -1,5 +1,5 @@
 export async function fetchSystemData(signal) {
-    const res = await fetch("http://172.20.10.13/system_health.json", { signal });
+    const res = await fetch("http://192.168.1.17/system_health.json", { signal });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const json = await res.json();
   
